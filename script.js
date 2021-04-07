@@ -62,7 +62,6 @@ const switchPlayer = function () {
 // Click hold button
 btnHold.addEventListener('click', function () {
   if (playing) {
-    showMessage(`Player ${currentPlayer} holded!`);
     totalScore[currentPlayer] += currentScore;
 
     if (totalScore[currentPlayer] >= winScore) {
@@ -80,8 +79,6 @@ btnHold.addEventListener('click', function () {
 // Click roll button
 btnRoll.addEventListener('click', function () {
   if (playing) {
-    showMessage(`Player ${currentPlayer} make a roll!`);
-
     let random = Math.floor(Math.random() * 6) + 1;
     dice.src = `dice-${random}.png`;
 
@@ -100,8 +97,3 @@ btnRoll.addEventListener('click', function () {
     }
   }
 });
-
-// Show the message
-function showMessage(message) {
-  console.log(message);
-}
