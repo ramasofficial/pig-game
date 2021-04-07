@@ -17,7 +17,7 @@ const btnHold = document.querySelector('.btn--hold');
 const btnRoll = document.querySelector('.btn--roll');
 
 // Define variables
-const winScore = 10;
+const winScore = 30;
 let currentPlayer, currentScore, totalScore, playing;
 
 // Start the new game
